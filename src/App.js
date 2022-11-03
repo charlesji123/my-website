@@ -10,7 +10,7 @@ function App() {
       <h2>Now, my writing!</h2>
       <a href="https://bofan.substack.com">Subscribe to my newsletter</a>
     </div>
-  );
+  )
 }
 
 export default App;
