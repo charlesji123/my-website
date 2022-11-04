@@ -1,0 +1,39 @@
+[debug] [2022-11-04T01:10:29.328Z] ----------------------------------------------------------------------
+[debug] [2022-11-04T01:10:29.330Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bofan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-04T01:10:29.331Z] CLI Version:   11.16.0
+[debug] [2022-11-04T01:10:29.331Z] Platform:      win32
+[debug] [2022-11-04T01:10:29.331Z] Node Version:  v18.12.0
+[debug] [2022-11-04T01:10:29.332Z] Time:          Thu Nov 03 2022 21:10:29 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-11-04T01:10:29.332Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-04T01:10:29.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-04T01:10:29.339Z] > authorizing via signed-in user (bofanj@princeton.edu)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\bofan\my-website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-11-04T01:10:51.524Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-11-04T01:10:51.525Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"my-website","name":"my-website"}
+[debug] [2022-11-04T01:10:51.796Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2022-11-04T01:10:51.796Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Cloud Resource Manager project creation is disabled. Contact your administrator to enable this setting in the Google Cloud Platform service in the Google Workspace Admin console. See https://support.google.com/a/answer/9197205 for more information.","status":"FAILED_PRECONDITION","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"SERVICE","description":"Cloud Resource Manager project creation is disabled. Contact your administrator to enable this setting in the Google Cloud Platform service in the Google Workspace Admin console. See https://support.google.com/a/answer/9197205 for more information."}]}]}}
+[debug] [2022-11-04T01:10:51.848Z] FirebaseError: HTTP Error: 400, Cloud Resource Manager project creation is disabled. Contact your administrator to enable this setting in the Google Cloud Platform service in the Google Workspace Admin console. See https://support.google.com/a/answer/9197205 for more information.
+    at responseToError (C:\Users\bofan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\bofan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
