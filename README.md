@@ -1,1 +1,1 @@
-This is my personal website!
+Welcome to Bofan's website!
