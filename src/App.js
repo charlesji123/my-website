@@ -1,16 +1,17 @@
-import './App.css';
-import About from './Component/About';
-import Blog from './Component/Blog';
+import './App.css'
+import About from './Component/About'
+import React, { Component } from 'react'
 
 function App() {
-  return (
-    <div>
-      <h1 align="left">Hey there, welcome to my world!</h1>
-      <About />
-      <h2>Now, my writing!</h2>
-      <a href="https://bofan.substack.com">Subscribe to my newsletter</a>
-    </div>
-  )
+    return (
+      <div style={{backgroundColor: 'burlywood'}}>
+      .
+        <div className='about'>
+        <About />
+        </div>
+      .
+      </div>
+    )
 }
 
 export default App;

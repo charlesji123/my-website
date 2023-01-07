@@ -1,19 +1,34 @@
-.Root {
+/* body {
+  margin: 15;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+.App {
   text-align: center;
 }
 
-.Root-logo {
+.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Root-logo {
+  .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.Root-header {
+.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,9 +39,20 @@
   color: white;
 }
 
-.Root-link {
+.App-link {
   color: #61dafb;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-inline-container {
+  display: inline-flex;
+}
+
 
 @keyframes App-logo-spin {
   from {
